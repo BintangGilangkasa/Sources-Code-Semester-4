@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahri Books</title>
+    <h1>PEMINJAMAN BUKU</h1>
+</head>
+<body bgcolor="pink">
+    <form action="peminjaman.php" method="POST">
+        <fieldset>
+        <legend>Isi Biodata</legend>
+        <p>
+            <label>Nama: </label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+            <label>Username: </label>
+            <input type="text" name="username" placeholder="Username" />
+        <p>
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Your email" />
+        </p>
+        <p>
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Password" />
+        </p>
+        <p>
+            <label>Jenis kelamin: </label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Alamat: </label>
+            <textarea name="Alamat" rows="1" cols="50"></textarea>
+        </p>
+        <p>
+            <label>Judul Buku:</label>
+            <select name="Judul Buku">
+                <option value="Garis Waktu">Garis Waktu</option>
+                <option value="Atomic of Habits">Atomic of Habits</option>
+                <option value="Yang Katanya Cemara">Yang Katanya Cemara</option>
+                <option value="Filosofi Teras">Filosofi Teras</option>
+                <option value="Fundamental of Data Science">Fundamental of Data Science</option>
+                <option value="Laut Bercerita">Laut Bercerita</option>
+                <option value="Madilog">Madilog</option>
+            </select>
+        </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Atur Waktu Peminjaman</legend>
+            <p>
+                <label>Tanggal Peminjaman</label>
+                <input type="date" name="tanggalpinjam"/>
+            </p>
+
+            <p>
+                <label>Tanggal Pengembalian</label>
+                <input type="date" name="tanggalkembali"/>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Pinjam" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran</title>
+</head>
+<body bgcolor="Linen"></body>
+    <h2>Formulir Pendaftaran</h2>
+    <form action="pendaftaran.php" method="post"></form>
+        <fieldset>
+        <legend>Isi Biodata Anda</legend>
+        <p>
+            <label>Nama :</label>
+            <input type="text" name="Nama" placeholder="nama lengkap" />
+        </p>
+        <p>
+            <label>Email :</label>
+            <input type="text" name="Email" placeholder="email anda" />
+        </p>
+        <p>
+            <label>Password :</label>
+            <input type="text" name="Email" placeholder="password anda" />
+        </p>
+        <p>
+            <label>Alamat :</label>
+            <input type="text" name="Alamat" placeholder="Alamat lengkap" />
+        </p>
+        <p>
+            <label>Tanggal lahir :</label>
+            <input type="date" name="Tanggal lahir" placeholder="mm/dd/yyy"
+        </p>
+        <p>
+            <label>No.tlp :</label>
+            <input type="text" name="No.tlp" placeholder="nomor telepon"
+        </p>
+        <p>
+        <label for="gender">Jenis Kelamin :</label>
+        <select id="gender" name="gender">
+            <option value="pria">Pria</option>
+            <option value="wanita">Wanita</option>
+            <option value="Waria">Waria</option>
+        </select><br><br>
+            <label for="agama">Agama :</label>
+            <select id="agama" name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+                <option value="Ateis">Ateis</option>
+        </p>
+            </select><br><br>
+        <label for="hobi">Hobi :</label><br>
+        <input type="checkbox" id="membaca" name="hobi[]" value="membaca">
+        <label for="membaca">Membaca</label>
+        <input type="checkbox" id="olahraga" name="hobi[]" value="olahraga">
+        <label for="olahraga">Olahraga</label>
+        <input type="checkbox" id="musik" name="hobi[]" value="musik">
+        <label for="musik">Musik</label><br><br>
+        <input type="checkbox" id="Mencintai" name="hobi[]" value="Mencintai">
+        <label for="Mencintaimu">Mencintainya</label><br><br>
+        <input type="checkbox" id="Mukbang" name="hobi[]" value="Mukbang">
+        <label for="Mukbang">Mukbang</label><br><br>
+        
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea><br><br>
+        
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Registrasi Ulang</h1>
+</head>
+<body bgcolor="skyblue">
+    <form action="registrasi.php" method="POST">
+        <fieldset>
+        <legend>Isi Biodata Anda</legend>
+        <p>
+            <label>Nama : </label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+
+        <p>
+            <label>Username : </label>
+            <input type="text" name="username" placeholder="Username" />
+        </p>
+
+        <p>
+            <label>Email : </label>
+            <input type="email" name="email" placeholder="Your email" />
+        </p>
+
+        <p>
+            <label>Password : </label>
+            <input type="password" name="password" placeholder="Password" />
+        </p>
+
+        <p>
+            <label>Tanggal Lahir : </label>
+            <input type="date" name="tanggal"/>
+        </p>
+
+        <p>
+            <label>Jenis kelamin : </label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+
+        <p>
+            <label>Alamat: </label>
+            <textarea id="Alamat" name="Alamat" rows="1"></textarea>
+        </p>
+
+        <p>
+            <label>Jurusan : </label>
+            <select name="Jurusan">
+                <option value="Data Science">Data Science</option>
+                <option value="Information Tech">Information Tech</option>
+                <option value="Informatics">Informatics</option>
+                <option value="Information System">Information System</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Jalur Masuk : </label>
+            <select name="Jalur Masuk">
+                <option value="SNBP">SNBP</option>
+                <option value="SNBT">SNBT</option>
+                <option value="Mandiri">Mandiri</option>
+                <option value="Mandiri Skor UTBK">Mandiri Skor UTBK</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Masukkan Bukti Diterima: </label><br>
+            <input type="file" name="fileUpload">
+        </p>
+
+        <p>
+            <input type="submit" name="submit" value="SUBMIT" />
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
