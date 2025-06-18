@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ADMIN</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h3 class="font-bold text-center mb-6 text-3xl">Admin Panel Etalase Toko🤙🏼</h3>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="font-semibold text-2xl">Tambah Produk Baru</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mt-2">Nama Produk: </label>
+                    <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded"
+                        placeholder="Masukkan nama produk">
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700">Harga: </label>
+                    <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded"
+                        placeholder="Masukkan harga produk">
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700">Jumlah: </label>
+                    <input type="number" class="mt-1 block w-full p-2 border border-gray-300 rounded" placeholder="Masukkan jumlah produk">
+                </div>
+
+                <button type="submit" class="mt-2 bg-blue-700 text-white px-2 py-2 rounded hover:bg-blue-900 ">Simpan Produk</button>
+            </form>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg mt-6">
+            <h2 class="font-semibold text-2xl">Daftar Produk</h2>
+            <table class="min-w-full border-collapse border border-slate-50 mt-4">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class=" text-gray-400 p-2">ID</th>
+                        <th class=" text-gray-400 p-2">NAMA PRODUK</th>
+                        <th class=" text-gray-400 p-2">HARGA</th>
+                        <th class=" text-gray-400 p-2">JUMLAH</th>
+                        <th class=" text-gray-400 p-2">AKSI</th>
+                    </tr>
+                </thead>
+            </table>
+
+            <div class="text-center text-gray-400 mt-4">Memuat data...</div>
+        </div>
+    </div>
+
+</body>
+</html>

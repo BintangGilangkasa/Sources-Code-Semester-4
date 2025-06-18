@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+}
+
+#form-tambah,
+#daftar-item {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.aksi button {
+    margin-left: 5px;
+}
