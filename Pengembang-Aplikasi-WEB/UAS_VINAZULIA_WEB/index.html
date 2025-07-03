@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyna's Bakery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-sky-500 font-sans">
+
+  <header class="bg-cyan-400 text-center shadow">
+    <nav class="bg-sky-300 py-5 text-center">
+      <h1 class="text-3xl py-2 font-bold text-gray-800">Lyna's Bakery</h1>
+      <a href="#" class="mx-4 text-lg text-gray-800 hover:underline">Beranda</a>
+      <a href="#produk" class="mx-4 text-lg text-gray-800 hover:underline">Daftar Produk</a>
+      <a href="#form" class="mx-4 text-lg text-gray-800 hover:underline">Pesan Sekarang</a>
+    </nav>
+  </header>
+
+  <section class="bg-blue-100 text-white py-52" id="rexus">
+    <div class="max-w-4xl mx-auto text-center text-blue-700">
+      <h2 class="text-4xl font-bold mb-4">Selamat Datang di Lyna's Bakery</h2>
+      <p class="text-lg mb-8 max-w-3xl mx-auto">
+        Nikmati berbagai pilihan roti dan kue yang tidak hanya lezat, tetapi juga dibuat dengan sepenuh hati menggunakan
+        bahan-bahan pilihan. Setiap produk dari Lyna's Bakery dipanggang segar setiap hari untuk menghadirkan rasa yang
+        autentik dan kualitas terbaik. Mulai dari roti gandum sehat hingga kue chiffon lembut, kami hadir untuk menemani
+        setiap momen spesial Anda dengan cita rasa yang tak terlupakan.
+      </p>
+
+  </section>
+
+
+  <section id="produk" class="py-12 bg-blue-100">
+    <h2 class="text-3xl font-bold text-center mb-10">Daftar Produk</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
+      <!-- Produk 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="rotigandum.jpeg" alt="Roti Gandum" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Roti Gandum</h3>
+          <p class="text-gray-700 text-sm">Roti gandum bergizi, cocok untuk sarapan sehat setiap hari.</p>
+        </div>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="chiffon_pandan.jpg" alt="Chiffon Pandan" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Chiffon Pandan</h3>
+          <p class="text-gray-700 text-sm">Kue chiffon lembut rasa pandan yang disukai semua kalangan.</p>
+        </div>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="bolukukus.webp" alt="Bolu Kukus" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Bolu Kukus</h3>
+          <p class="text-gray-700 text-sm">Lembut dan manis, tersedia dalam aneka rasa dan warna menarik.</p>
+        </div>
+      </div>
+
+      <!-- Produk 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="donat.jpg" alt="Donat" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Donat</h3>
+          <p class="text-gray-700 text-sm">Donat lembut dengan berbagai topping menarik yang menggugah selera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form" class="py-14 bg-blue-100">
+    <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold text-center mb-6">Form Pemesanan</h2>
+      <form id="orderForm" onsubmit="return validateForm(event)">
+        <div class="mb-4">
+          <label for="nama" class="block font-medium mb-1">Nama:</label>
+          <input type="text" id="nama" name="nama" required
+            class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block font-medium mb-1">Email:</label>
+          <input type="email" id="email" name="email" required
+            class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div class="mb-4">
+          <label for="produk" class="block font-medium mb-1">Produk yang Dipesan:</label>
+          <input type="text" id="produk" name="produk" required
+            class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div class="mb-4">
+          <label for="alamat" class="block font-medium mb-1">Alamat Pengiriman:</label>
+          <textarea id="alamat" name="alamat" rows="3" required
+            class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-2 px-4 rounded transition">Kirim
+          Pesanan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Lyna's Bakery</p>
+  </footer>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault(); // mencegah reload form
+      console.log("validateForm dijalankan");
+
+      const nama = document.getElementById("nama").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const produk = document.getElementById("produk").value.trim();
+      const alamat = document.getElementById("alamat").value.trim();
+
+      if (!nama || !email || !produk || !alamat) {
+        alert("Mohon lengkapi semua data.");
+        return false;
+      }
+
+      alert("Pesanan Anda telah dikirim!");
+      document.getElementById("orderForm").reset();
+      return true;
+    }
+  </script>
+</body>
+
+</html>
